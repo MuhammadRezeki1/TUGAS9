@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/es2"
+    android:padding="25dp"
+    tools:context=".register_activity">
+
+    <TextView
+        android:id="@+id/tvPleaseCreateaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Make Youre Account"
+        android:textSize="28sp"
+
+        />
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvPleaseCreateaccount"
+        android:hint="Username"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:drawablePadding="20dp"
+        />
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterUsername"
+        android:layout_marginTop="12dp"
+        android:hint="Your Name"
+        android:drawableStart="@drawable/baseline_assignment_ind_24"
+        android:drawablePadding="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_marginTop="12dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawablePadding="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRegisterPassword"
+        android:text="CreateAccount"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/tvLoginHere"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:textSize="15sp"
+        android:text="All Ready Haave Account? Login Here!"
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+
+
+        />
+
+</RelativeLayout>
